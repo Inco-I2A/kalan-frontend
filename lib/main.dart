@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'screens/screens.dart';
+import 'theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,8 +13,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'KALAN App',
-      theme: ThemeData(primarySwatch: Colors.blue, useMaterial3: true),
-      initialRoute: '/connexion',
+      theme: AppTheme.lightTheme,
+      initialRoute: '/onboarding',
       routes: {
         '/connexion': (context) => const ConnexionScreen(),
         '/inscription': (context) => const InscriptionScreen(),
@@ -32,6 +33,7 @@ class MyApp extends StatelessWidget {
         '/flashcards_generation': (context) =>
             const FlashcardsGenerationScreen(),
         '/history': (context) => const HistoryScreen(),
+        '/recommendations': (context) => const RecommendationsScreen(),
       },
     );
   }

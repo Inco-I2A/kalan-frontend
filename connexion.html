@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+                  "on-surface": "#1b1b23",
+                  "inverse-on-surface": "#f2effb",
+                  "tertiary-fixed": "#ffdcc5",
+                  "on-secondary-fixed-variant": "#653e00",
+                  "outline": "#767586",
+                  "surface-variant": "#e4e1ed",
+                  "surface-container-lowest": "#ffffff",
+                  "surface-container-high": "#e9e6f3",
+                  "on-tertiary": "#ffffff",
+                  "primary": "#4648d4",
+                  "tertiary": "#904900",
+                  "error-container": "#ffdad6",
+                  "secondary-container": "#fea619",
+                  "tertiary-fixed-dim": "#ffb783",
+                  "on-primary-fixed": "#07006c",
+                  "error": "#ba1a1a",
+                  "inverse-surface": "#303038",
+                  "surface-dim": "#dbd8e4",
+                  "on-primary": "#ffffff",
+                  "inverse-primary": "#c0c1ff",
+                  "tertiary-container": "#b55d00",
+                  "on-primary-fixed-variant": "#2f2ebe",
+                  "on-background": "#1b1b23",
+                  "on-tertiary-fixed-variant": "#703700",
+                  "on-secondary-container": "#684000",
+                  "on-secondary": "#ffffff",
+                  "surface-bright": "#fcf8ff",
+                  "surface": "#fcf8ff",
+                  "on-error": "#ffffff",
+                  "background": "#fcf8ff",
+                  "on-tertiary-fixed": "#301400",
+                  "on-surface-variant": "#464554",
+                  "surface-container": "#efecf8",
+                  "surface-container-highest": "#e4e1ed",
+                  "secondary-fixed-dim": "#ffb95f",
+                  "secondary": "#855300",
+                  "primary-fixed-dim": "#c0c1ff",
+                  "surface-tint": "#494bd6",
+                  "on-tertiary-container": "#fffbff",
+                  "on-primary-container": "#fffbff",
+                  "on-error-container": "#93000a",
+                  "primary-fixed": "#e1e0ff",
+                  "on-secondary-fixed": "#2a1700",
+                  "surface-container-low": "#f5f2fe",
+                  "secondary-fixed": "#ffddb8",
+                  "primary-container": "#6063ee",
+                  "outline-variant": "#c7c4d7"
+          },
+          "borderRadius": {
+                  "DEFAULT": "0.25rem",
+                  "lg": "0.5rem",
+                  "xl": "0.75rem",
+                  "full": "9999px"
+          },
+          "spacing": {
+                  "sm": "12px",
+                  "xs": "4px",
+                  "lg": "24px",
+                  "gutter": "16px",
+                  "md": "16px",
+                  "base": "8px",
+                  "xl": "32px",
+                  "margin": "20px"
+          },
+          "fontFamily": {
+                  "title-md": ["Inter"],
+                  "body-rg": ["Inter"],
+                  "label-sm": ["Inter"],
+                  "display-lg": ["Inter"]
+          },
+          "fontSize": {
+                  "title-md": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                  "body-rg": ["16px", {"lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400"}],
+                  "label-sm": ["13px", {"lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+                  "display-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .tactile-button {
+      box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
+    }
+    .tactile-button:active {
+      transform: translateY(2px);
+      box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1);
+    }
+    .primary-shadow {
+      box-shadow: 0 4px 0 0 #2f2ebe;
+    }
+    .secondary-shadow {
+      box-shadow: 0 4px 0 0 #653e00;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-rg text-body-rg min-h-screen flex flex-col">
+<!-- Suppression of Navigation Shell as per 'Linear/Transactional' rule -->
+<main class="flex-grow flex flex-col items-center justify-center px-margin py-xl">
+<!-- Hero Branding Section -->
+<div class="w-full max-w-md text-center mb-xl">
+<div class="inline-flex items-center justify-center p-md bg-primary-container rounded-[24px] mb-lg shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-[40px] text-on-primary" data-icon="auto_stories" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-surface mb-xs">Bon retour !</h1>
+<p class="font-body-rg text-body-rg text-on-surface-variant">Connecte-toi pour retrouver tes flashcards.</p>
+</div>
+<!-- Login Form Card -->
+<div class="w-full max-w-md bg-surface-container-lowest rounded-[32px] p-xl shadow-[0_8px_30px_rgb(99,102,241,0.08)] border border-surface-container-high">
+<form class="space-y-lg">
+<!-- Email Field -->
+<div class="space-y-base">
+<label class="font-label-sm text-label-sm text-on-surface-variant ml-xs flex items-center gap-base">
+<span class="material-symbols-outlined text-[18px]" data-icon="mail">mail</span>
+            Email
+          </label>
+<input class="w-full h-[56px] px-lg rounded-xl border-outline-variant bg-surface-container-low focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all placeholder:text-outline/50" placeholder="ton@email.com" type="email"/>
+</div>
+<!-- Password Field -->
+<div class="space-y-base">
+<div class="flex justify-between items-center ml-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-base">
+<span class="material-symbols-outlined text-[18px]" data-icon="lock">lock</span>
+              Mot de passe
+            </label>
+<a class="font-label-sm text-label-sm text-primary hover:underline" href="#">Mot de passe oublié ?</a>
+</div>
+<div class="relative">
+<input class="w-full h-[56px] px-lg rounded-xl border-outline-variant bg-surface-container-low focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all placeholder:text-outline/50" placeholder="••••••••" type="password"/>
+<button class="absolute right-md top-1/2 -translate-y-1/2 text-outline" type="button">
+<span class="material-symbols-outlined" data-icon="visibility">visibility</span>
+</button>
+</div>
+</div>
+<!-- Primary Action -->
+<button class="w-full h-[60px] bg-primary-container text-on-primary font-title-md text-title-md rounded-[20px] primary-shadow tactile-button transition-all flex items-center justify-center gap-md" type="submit">
+          Se connecter
+          <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</form>
+<!-- Divider -->
+<div class="relative my-xl flex items-center">
+<div class="flex-grow border-t border-outline-variant"></div>
+<span class="mx-md font-label-sm text-label-sm text-outline">OU</span>
+<div class="flex-grow border-t border-outline-variant"></div>
+</div>
+<!-- Social Logins -->
+<div class="grid grid-cols-2 gap-md">
+<button class="h-[56px] bg-surface-container-high rounded-xl flex items-center justify-center hover:bg-surface-variant transition-colors tactile-button border border-transparent">
+<img alt="Google" class="w-6 h-6 mr-sm" data-alt="Official Google G logo in bright colors on white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgAXYs9QF8QvAQGDOnJefRvtR_vDUBb91C2kABricbAHaXhbGJ8p4IjO-FNBtO0oat0ukWaxR-M3vT6ZIUM8Dgm2BDy1lBDt5VqLtJR3KYfgunb5z8xnsjlLjIT_RW8wXI9vq_FeBNav5mC1D2cMDPcbMx3MWuFl433rJT9WYrE1gIrn30y-mv6py3G6Doj-gn1HZwzOibJD5mPYqIjDiSh7Az0NgpEzjtb5ALk7SLAhwDkOCtxCZ74gpHnn7s9jP1Uk2F3Z62ofQ"/>
+<span class="font-label-sm text-label-sm text-on-surface">Google</span>
+</button>
+<button class="h-[56px] bg-on-surface text-surface rounded-xl flex items-center justify-center hover:opacity-90 transition-opacity tactile-button">
+<span class="material-symbols-outlined text-[24px] mr-sm" data-icon="apple" style="font-variation-settings: 'FILL' 1;">ios</span>
+<span class="font-label-sm text-label-sm">Apple</span>
+</button>
+</div>
+</div>
+<!-- Bottom Link -->
+<div class="mt-xl text-center">
+<p class="font-body-rg text-body-rg text-on-surface-variant">
+        Pas de compte ? 
+        <a class="text-primary font-bold hover:underline" href="#">S'inscrire</a>
+</p>
+</div>
+<!-- Decorative Illustration Background (Abstract) -->
+<div class="fixed top-0 left-0 w-full h-full -z-10 pointer-events-none opacity-40">
+<div class="absolute top-[10%] right-[5%] w-64 h-64 bg-secondary-container/20 rounded-full blur-3xl"></div>
+<div class="absolute bottom-[10%] left-[5%] w-80 h-80 bg-primary-container/10 rounded-full blur-3xl"></div>
+</div>
+<!-- Offline Indicator as per guidelines -->
+<div class="fixed top-md right-md z-50 flex items-center gap-sm bg-blue-500/10 text-blue-600 px-md py-xs rounded-full border border-blue-500/20 backdrop-blur-sm">
+<span class="material-symbols-outlined text-[18px]" data-icon="wifi">wifi</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Online</span>
+</div>
+</main>
+<!-- Illustration for Desktop (Hidden on Mobile) -->
+<div class="hidden lg:flex fixed right-0 top-0 bottom-0 w-[40%] bg-surface-container-low items-center justify-center p-xl overflow-hidden">
+<div class="relative w-full max-w-lg aspect-square">
+<div class="absolute inset-0 bg-primary-container rounded-[40px] rotate-3 opacity-10"></div>
+<div class="absolute inset-0 bg-secondary-container rounded-[40px] -rotate-3 opacity-10"></div>
+<div class="relative h-full w-full bg-white rounded-[40px] shadow-2xl flex flex-col items-center justify-center p-xl text-center border border-white">
+<img class="w-48 h-48 rounded-[32px] mb-lg object-cover shadow-lg" data-alt="Stylized composition of colorful books and learning materials in a bright, modern studio setting with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAClqBEQDDa_CW-eqJsN-6G5h-NfzAs3VbxBR14As8RWAt_45F1GGHTQI3EimltQ-8tC45wp0iOUUXW06sUU6WaguClGwwh-E5LgHt9DQUGISpwVLDY06l8cGaTGCyhNJZsYxx9-3ReTkoqdIYdpPCCDPEpoYSDhbAinYjnMEsZeIy-fulTP945eumEZkL7cn_pqyzgnHSD63gkwYzlzF2X8nhquM8Lj3d0u3h3hg23obntMnk1Ygt-19Cwsxr9QIheFPhLjALKs2M"/>
+<h2 class="font-display-lg text-display-lg text-on-surface mb-md">Prêt pour tes défis ?</h2>
+<p class="font-body-rg text-body-rg text-on-surface-variant px-xl">Mémorise plus vite, joue plus souvent et gagne des trophées avec tes amis sur FlashLearn.</p>
+<div class="mt-xl flex gap-md">
+<div class="bg-tertiary-fixed text-on-tertiary-fixed px-lg py-sm rounded-full flex items-center gap-sm">
+<span class="material-symbols-outlined" data-icon="emoji_events" style="font-variation-settings: 'FILL' 1;">emoji_events</span>
+<span class="font-label-sm">Top 10% Aujourd'hui</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body></html>
